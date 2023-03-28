@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nihad Hodzic"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreiranje responsive galerije</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .container {
+            max-width: 1100px;
+            width: 90%;
+            margin: 0 auto;
+
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 70px;
+            padding-bottom: 30px; 
+        }
+
+        .box {
+            height: 144px;
+            background-color: #5f50e5;
+            border: 1px solid  #e7e5fc;
+            border-radius: 10%;
+        }
+         img {
+            width: 164px;
+            margin: auto;
+            
+
+             }
+        h1 {
+                background-color: white;
+                font-family: sans-serif;
+                font-size: 16px;
+                text-align: center;
+                padding: 1px;
+             }
+        .paragraf {
+            max-width: 1100px;
+            width: 90%;
+            display: grid;
+            margin:auto
+
+        }
+
+        @media screen and (max-width: 1100px) {
+            .container {
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 514px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="placeholder-image.png" alt="slika">
+            <h1>Naslov</h1>
+        </div>
+        <div class="box">
+            <img src="placeholder-image.png" alt="slika">
+            <h1>Naslov</h1>
+        </div>
+        <div class="box">
+            <img src="placeholder-image.png" alt="slika">
+            <h1>Naslov</h1>
+        </div>
+        <div class="box">
+            <img src="placeholder-image.png" alt="slika">
+            <h1>Naslov</h1>
+        </div>
+        <div class="box">
+            <img src="placeholder-image.png" alt="slika">
+            <h1>Naslov</h1>
+        </div>
+        <div class="box">
+            <img src="placeholder-image.png" alt="slika">
+            <h1>Naslov</h1>
+        </div>
+        <div class="box">
+            <img src="placeholder-image.png" alt="slika">
+            <h1>Naslov</h1>
+        </div>
+        <div class="box">
+            <img src="placeholder-image.png" alt="slika">
+            <h1>Naslov</h1>
+        </div>
+        <div class="box">
+            <img src="placeholder-image.png" alt="slika">
+            <h1>Naslov</h1>
+        </div>
+        <div class="box">
+            <img src="placeholder-image.png" alt="slika">
+            <h1>Naslov</h1>
+        </div>
+    </div>
+
+    <div class="paragraf">
+    <p>Obratite pažnju na to da unutar slike koja prikazuje izgled na telefonima nisu prikazani svi elementi. Svi oni se nalaze u jednoj koloni, jedan ispod drugog.
+
+        Ilustrovani grid je moguće realizovati korišćenjem osnovnih CSS pristupa, korišćenjem Flexboxa ili CSS Grida, ili čak njihovim kombinovanjem. Izbor je na vama.
+        
+        Placeholder slika koja je korišćena u primeru može se preuzeti odavde (link za download). U pitanju je transparentni PNG sa grafikom bele boje. Ovakvu sliku je potrebno postaviti preko plave boje pozadine elementa kako bi grafika bila vidljiva.
+        
+        Napomena: Zadatak podići na GitHub, u okviru javnog repozitorijuma, pa voditelju dostaviti link do takvog repozitorijuma.</p>
+    </div>
+    </body>
+
+</html>
